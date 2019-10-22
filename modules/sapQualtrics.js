@@ -66,7 +66,9 @@
         console.log("Filling Survey in Qualtrics " + uri);
         req.post(options, function (error, response, body) {
             if (!error && response.statusCode == 200) {
-                console.log("Succesfully posted to Qualtrics")
+                var obj = JSON.parse(body);
+                resp = obj.result.responseId;
+                console.log("Succesfully posted to Qualtrics. Response ID: " + resp)
                 callback(null, resp);
             } else {
                 callback(response.statusMessage, response);
