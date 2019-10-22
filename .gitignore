@@ -1,2 +1,4 @@
 node_modules/
 launch.json
+.DS_Store
+modules/.DS_Store

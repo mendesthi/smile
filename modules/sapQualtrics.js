@@ -37,7 +37,10 @@
                 "locationLongitude": "8.6442",
                 "distributionChannel": "anonymous",
                 "userLanguage": "EN",
-                "QID1": surveyData.QID1,
+                "Sessio_CEDrn9bgft": [
+                    surveyData.sessionID
+                ],
+                "QID1": surveyData.question1,
                 "QID1_DO": [
                 "1",
                 "2",
@@ -45,7 +48,7 @@
                 "4",
                 "5"
                 ],
-                "QID2_TEXT": surveyData.QID2_Text
+                "QID2_TEXT": surveyData.question2
             }
         };
     
