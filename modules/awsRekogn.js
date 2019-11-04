@@ -114,7 +114,7 @@
         var cognitoUser = new AmazonCognitoIdentity.CognitoUser(userData);
         cognitoUser.authenticateUser(authenticationDetails, {
             onSuccess: function (result) {
-                console.log("Cognito authenticated! Image: " + imageBase64);
+                console.log("Amazon Cognito authenticated!");
                 DetectFaces(imageBase64, callback);
             },
             onFailure: function(err) {
