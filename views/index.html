@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="/static/style/cssbuttons.css" rel="stylesheet" type="text/css">
+    <link href="/static/style/glass.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="/static/javascript/smile.js"></script>
+    <meta charset="UTF-8">
+    <title>Rekognition</title>
+</head>
+<style>
+    body {
+        background-color: rgb(73, 86, 131);
+    }
+
+    h1 {
+        color: white;
+    }
+
+    #myOnlineCamera video {
+        width: 320px;
+        height: 240px;
+        margin: 15px;
+        float: left;
+    }
+
+    #myOnlineCamera canvas {
+        width: 320px;
+        height: 240px;
+        margin: 15px;
+        float: left;
+    }
+
+    #myOnlineCamera button {
+        clear: both;
+        margin: 30px;
+    }
+</style>
+
+<body>
+  <center>
+    <H1>Rating Estimator based on face recognition</H1>
+    <p id="opResult"></p>
+    <table>
+        <tr><td><canvas id="snapshot" width=640 height=480></canvas><br></td>   
+        <tr><td><video id="player" controls autoplay></video></td></tr>
+        <tr><td><div class="cssbutton glass a"><input type="submit" value="Capture" id="capture"></div></td></tr>
+        <tr><td><div class="cssbutton glass a"><input type="submit" value="Post to Facebook!" id="facebook"></div></td></tr>
+        <tr><td><textarea name="textFeedback" cols="40" rows="5"></textarea><br></td></tr>
+        <tr><td><div class="cssbutton glass a"><input type="submit" value="Confirm (Send to Qualtrics)" id="confirm"></div></td></tr>
+    </table>    
+    
+</center>
+</body>
+</html>

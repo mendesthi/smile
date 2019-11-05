@@ -7,6 +7,7 @@ const myParser = require("body-parser");
 var express = require("express");
 var cors = require('cors');
 var app = express();
+var path = require("path");
 
   app.use(cors());
 
@@ -17,6 +18,12 @@ var app = express();
 
   // Parse JSON bodies (as sent by API clients)
   app.use(express.json()); 
+  
+  // serves static content for the front-end page
+  app.use('/static', express.static('static'));
+
+  // serves the index page for the front-end
+  app.get('/', (req, res) => res.sendFile(path.join(__dirname, '/views/index.html')));
 
   //End-point to analyse picture using AWS Rekognition
   app.post('/awsRekogn', function (req, res) { 

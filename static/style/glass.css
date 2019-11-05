@@ -1,0 +1,14 @@
+button.cssbutton.glass span,a.cssbutton.glass span,div.cssbutton.glass input {height:41px; line-height:41px;}
+
+	button.cssbutton.glass.a span,a.cssbutton.glass.a span,div.cssbutton.glass.a input {
+	background:url("glass_aRight.gif") no-repeat right 0;
+	}
+	button.cssbutton.glass.a,a.cssbutton.glass.a,div.cssbutton.glass.a {
+	background:url("glass_aLeft.gif") no-repeat 0 center;
+	}
+	button.cssbutton.glass.a:hover span,a.cssbutton.glass.a:hover span,div.cssbutton.glass.a:hover input {
+	background:url("glass_aRight.gif") no-repeat right 100%;
+	}
+	button.cssbutton.glass.a:hover,a.cssbutton.glass.a:hover,div.cssbutton.glass.a:hover {
+	background:url("glass_aLeft.gif") no-repeat -272px center;
+	}
