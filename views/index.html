@@ -43,13 +43,13 @@
     <p id="opResult"></p>
     <table>
         <tr><td><canvas id="snapshot" width=640 height=480></canvas><br></td>   
-        <tr><td><video id="player" controls autoplay></video></td></tr>
+        <tr><td><video id="player" controls autoplay loop muted playsInline onloadeddata="this.play();"></video></td></tr>
         <tr><td><div class="cssbutton glass a"><input type="submit" value="Capture" id="capture"></div></td></tr>
         <tr><td><div class="cssbutton glass a"><input type="submit" value="Post to Facebook!" id="facebook"></div></td></tr>
         <tr><td><textarea name="textFeedback" cols="40" rows="5"></textarea><br></td></tr>
         <tr><td><div class="cssbutton glass a"><input type="submit" value="Confirm (Send to Qualtrics)" id="confirm"></div></td></tr>
-    </table>    
-    
+        <tr><td><div><input type="hidden" value="sessionId" readonly id="sessId" visible=false></div></td></tr>
+    </table>
 </center>
 </body>
 </html>

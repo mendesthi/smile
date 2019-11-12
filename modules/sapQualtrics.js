@@ -22,7 +22,7 @@
         console.log('Qualtrics Tenant: ' + uri);
         var resp = {}
         var currDate = new Date().toJSON();
-    
+        console.log(surveyData.sessionID);
         var data = {
             "values": {
                 "startDate": currDate,
@@ -37,9 +37,7 @@
                 "locationLongitude": "8.6442",
                 "distributionChannel": "anonymous",
                 "userLanguage": "EN",
-                "Sessio_CEDrn9bgft": [
-                    surveyData.sessionID
-                ],
+                "SessID_CEDd8i1hnp": surveyData.sessionID,
                 "QID1": surveyData.question1,
                 "QID1_DO": [
                 "1",

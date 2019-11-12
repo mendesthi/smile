@@ -118,7 +118,7 @@ window.addEventListener('load', function () {
     function fillQualtrics() {  
         var QID1 = finalRating; // this is the rating from smile
         var QID2_Text = document.getElementsByName("textFeedback")[0].value; //this is a text feedback from user
-        var sessionID = '0987612345';
+        var sessionID = document.getElementById('sessId').value;
 
         //Format body with rating (QID1) and feedback text (QID2_Text)
         bodyTest = {
