@@ -18,8 +18,8 @@ module.exports = {
 
 function PostToFacebookPage(picture, callback) {
     console.log(picture);
-    const pageID = process.env.FACEBOOK_PAGEID || '106114650814584';
-    const access_token = process.env.FACEBOOK_ACCESSTOKEN || 'EAAH1r8MogLIBAEIfgjq5YkA00A9pWF6MDKeQHpQGZAnH9rNPaFJ1Huzqw3UWxicxCl6VKZAsUAyYxeHvZBInridlPoUYloMh0Vvi5YReGkVwDTmr9T0JaH3fkZCE03PaASOIZAl3QW077oxKwwHK2e7eT5jZAmd5lZAavmjcI2OOgZDZD';
+    const pageID = process.env.FACEBOOK_PAGEID;
+    const access_token = process.env.FACEBOOK_ACCESSTOKEN;
     const options = {
         method: 'POST',
         headers: {
@@ -30,7 +30,6 @@ function PostToFacebookPage(picture, callback) {
             access_token: access_token,
             url: picture,
             caption: 'I have been at the SAP SMB Innovation Summit!!!'
-            // vault_image_id: picture
         }
     };
 
