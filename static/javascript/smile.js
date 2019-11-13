@@ -96,8 +96,8 @@ window.addEventListener('load', function () {
         };
         //Call server-side image rekognition (uses AWS Rekognition)
         $.ajax({
-            // url: "https://smiletcm-happy-buffalo.cfapps.eu10.hana.ondemand.com/awsRekogn", //Replace with backend server hostname
-            url: "http://localhost:30000/awsRekogn", //Replace with backend server hostname
+            url: "https://smiletcm-happy-buffalo.cfapps.eu10.hana.ondemand.com/awsRekogn", //Replace with backend server hostname
+            // url: "http://localhost:30000/awsRekogn", //Replace with backend server hostname
             type: "POST",
             data: JSON.stringify(bodyTest),
             contentType: "application/json",
@@ -129,8 +129,8 @@ window.addEventListener('load', function () {
 
         //Call server-side API to process qualtrics survey
         $.ajax({
-            // url: "https://smiletcm-happy-buffalo.cfapps.eu10.hana.ondemand.com/fillSurvey", //Replace with backend server hostname
-            url: "http://localhost:30000/fillSurvey", //Replace with backend server hostname
+            url: "https://smiletcm-happy-buffalo.cfapps.eu10.hana.ondemand.com/fillSurvey", //Replace with backend server hostname
+            // url: "http://localhost:30000/fillSurvey", //Replace with backend server hostname
             type: "POST",
             data: JSON.stringify(bodyTest),
             contentType: "application/json",
@@ -153,8 +153,8 @@ window.addEventListener('load', function () {
         };
         //Call server-side image rekognition (uses AWS Rekognition)
         $.ajax({
-            // url: "https://smiletcm-happy-buffalo.cfapps.eu10.hana.ondemand.com/PostToFacebook", //Replace with backend server hostname
-            url: "http://localhost:30000/PostToFacebook", //Replace with backend server hostname
+            url: "https://smiletcm-happy-buffalo.cfapps.eu10.hana.ondemand.com/PostToFacebook", //Replace with backend server hostname
+            // url: "http://localhost:30000/PostToFacebook", //Replace with backend server hostname
             type: "POST",
             data: JSON.stringify(bodyTest),
             contentType: "application/json",
@@ -182,8 +182,8 @@ window.addEventListener('load', function () {
         };
         //Call server-side image rekognition (uses AWS Rekognition)
         $.ajax({
-            // url: "https://smiletcm-happy-buffalo.cfapps.eu10.hana.ondemand.com/UploadImage", //Replace with backend server hostname
-            url: "http://localhost:30000/UploadImage", //Replace with backend server hostname
+            url: "https://smiletcm-happy-buffalo.cfapps.eu10.hana.ondemand.com/UploadImage", //Replace with backend server hostname
+            // url: "http://localhost:30000/UploadImage", //Replace with backend server hostname
             type: "POST",
             data: JSON.stringify(bodyTest),
             contentType: "application/json",
